@@ -15,7 +15,6 @@ import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
 
-import Grid from '@mui/material/Grid';
 
 const steps = ['Draft', 'Draft', 'Publish'];
 
@@ -45,15 +44,8 @@ export default function Checkout() {
 
   return (
     <React.Fragment>
-      <CssBaseline />
-
-      <AppBar 
-       color="default"
-        elevation={0}>
-        <Typography variant="h6" color="inherit" noWrap  sx ={{textAlign: 'center', p:2, borderBottom: (t) => `1px solid ${t.palette.divider}`}}>    Create Custom Content </Typography>
-      </AppBar>
-      <Grid component="main" maxWidth="sm" sx={{ mb: 4 }}>
-        <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
+            <Typography variant="h6" color="inherit" noWrap  sx ={{textAlign: 'center', p:2, borderBottom: (t) => `1px solid ${t.palette.divider}`}}>    Create Custom Content </Typography>
+      <Container maxWidth="md" sx={{ mb: 4 }}>
           <Stepper activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
             {steps.map((label) => (
               <Step key={label}>
@@ -92,11 +84,9 @@ export default function Checkout() {
               </Box>
             </React.Fragment>
           )}
-        </Paper>
       
-      </Grid>
+      
+      </Container>
     </React.Fragment>
   );
 }
-
-

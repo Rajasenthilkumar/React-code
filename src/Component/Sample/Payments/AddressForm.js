@@ -5,17 +5,47 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControl from '@mui/material/FormControl';
+const currencies = [
+    {
+        value: 'USD',
+        label: 'Trivia',
+    },
+    {
+        value: 'EUR',
+        label: 'Trivia 1',
+    },
+    {
+        value: 'BTC',
+        label: 'Trivia 2',
+    },
+    {
+        value: 'JPY',
+        label: 'Trivia 3',
+    },
+];
 export default function AddressForm() {
     return (
         <React.Fragment>
             <Grid container spacing={4}>
                 <Grid item xs={12}>
-
                     <TextField label="Name" fullWidth id="outlined-size-normal" defaultValue="Aceme Introduction Trivia " />
                 </Grid>
-
                 <Grid item xs={12}>
-                    <TextField label="Activity" fullWidth id="outlined-size-normal" defaultValue=" Trivia " />
+                    <TextField
+                        fullWidth
+                        id="outlined-select-currency-native"
+                        select
+                        label="Activity"
+                        defaultValue="Trivia"
+                        SelectProps={{
+                            native: true,
+                        }} >
+                        {currencies.map((option) => (
+                            <option key={option.value} value={option.value}>
+                                {option.label}
+                            </option>
+                        ))}
+                    </TextField>
                 </Grid>
                 <Grid item xs={12}>
                     <FormControl>
@@ -31,7 +61,7 @@ export default function AddressForm() {
                         </RadioGroup>
                     </FormControl>
                 </Grid>
-                
+
                 <Grid item xs={12}>
                     <TextField label="Medium" fullWidth id="outlined-size-normal" defaultValue="Create automatically" />
                 </Grid>
