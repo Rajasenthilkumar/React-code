@@ -7,19 +7,19 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControl from '@mui/material/FormControl';
 const currencies = [
     {
-        value: 'USD',
+        value: 'Trivia',
         label: 'Trivia',
     },
     {
-        value: 'EUR',
+        value: 'Trivia 1',
         label: 'Trivia 1',
     },
     {
-        value: 'BTC',
+        value: 'Trivia 2',
         label: 'Trivia 2',
     },
     {
-        value: 'JPY',
+        value: 'Trivia 3',
         label: 'Trivia 3',
     },
 ];

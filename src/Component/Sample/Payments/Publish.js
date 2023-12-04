@@ -11,7 +11,7 @@ import Tooltip from '@mui/material/Tooltip';
 import { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
-
+import Box from '@mui/material/Box';
 const BootstrapTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} arrow classes={{ popper: className }} />
 ))(({ theme }) => ({
@@ -78,7 +78,7 @@ function Review() {
               variant="outlined"
               color="primary"
               sx={{
-                backgroundColor: '#a6a6a6',
+                // backgroundColor: '#a6a6a6',
                 borderColor: '#c4c4c4',
                 color: '#717171',
 
@@ -103,32 +103,28 @@ function Review() {
         </React.Fragment>
 
       </Grid>
-
-
-
       <Grid container alignItems="center" spacing={2}>
         <Grid item xs={12}>
-        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-  <Button
-    variant="outlined"
-    color="primary"
-    sx={{
-      backgroundColor: 'transparent',
-      borderColor: '#FFC900', // Set the button border color to #FFC900
-      color: '#212121',
-      marginRight: 2, // Adjust margin as needed
-    }}
-  >
-    SHARE
-  </Button>
-  <TextField
-    label="Share with"
-    fullWidth
-    id="outlined-size-normal"
-    defaultValue="emma@acme.com,ak@acme.com"
-    helperText="Specify multiple emails by using commas as a separator."
-  />
-</div>
+          <Box display="flex" alignItems="center">
+            <TextField label="Share with"
+              fullWidth
+              id="outlined-size-normal"
+              defaultValue="emma@acme.com,ak@acme.com"
+            // helperText="Specify multiple emails by using commas as a separator."
+            />
+            <Button variant="outlined"
+              color="primary"
+              sx={{
+                backgroundColor: 'transparent',
+                borderColor: '#FFC900',
+                color: '#212121',
+                marginLeft: 2,
+              }}
+            >
+
+              Submit
+            </Button>
+          </Box>
 
         </Grid>
       </Grid>
