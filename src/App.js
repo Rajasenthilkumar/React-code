@@ -6,11 +6,13 @@ import Second from './Component/Sample/Clock/Header';
 import Third from './Component/Sample/Clock/Third'
 import Api from './Component/Sample/Clock/Api'
 import Four from './Component/Sample/Clock/Four'
-import From from './Component/Sample/Sample1/Form'
+import From from './Component/Sample//Form/Form'
 import Check from './Component/Sample/Payments/Checkout'
 
 import Header from './Component/Api integration/Header'
 import Router from './Component/Api integration/Router'
+
+import Route from'./Component/Projectsetup/Route'
 // import './App.css';
 
 function App() {
@@ -26,8 +28,8 @@ function App() {
       <From />*/}
       {/* <Header />
       <Router /> */}
- <Check /> 
-
+    {/* <Check />  */}
+      <Route/>
     </div>
   );
 }
