@@ -13,6 +13,7 @@ import Header from './Component/Api integration/Header'
 import Router from './Component/Api integration/Router'
 
 import Route from'./Component/Projectsetup/Route'
+import Tournaments from'./Component/HermisTask/Tournaments'
 // import './App.css';
 
 function App() {
@@ -29,10 +30,12 @@ function App() {
       {/* <Header />
       <Router /> */}
     {/* <Check />  */}
-      <Route/>
+      {/* <Route/> */}
+      <Tournaments/>
     </div>
   );
 }
+
 
 export default App;
 
