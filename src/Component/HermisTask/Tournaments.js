@@ -11,6 +11,7 @@ import Viewtournament from './Viewtournament';
 import Youtubeview from './Youtubeview';
 import Createnewtournament from './Createnewtournament';
 import Header from './Header'
+import Tournamentviewpage from './Tournamentviewpage';
 export default function FixedContainer() {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
 
@@ -28,7 +29,7 @@ export default function FixedContainer() {
             <Grid item xs={12} container alignItems="center" sx={{ mt: 2 }}>
               <Typography variant="h6">Tournaments </Typography>
               <Tooltip title='Boost attendee engagement with the tournament, featuring cumulative scores from executed events!'>
-                <ErrorIcon sx={{ marginLeft: '20px' }} />
+                <ErrorIcon sx={{ marginLeft: '20px',Color:'#e2e2e2 ' }} />
               </Tooltip>
             </Grid>
 
@@ -72,8 +73,11 @@ export default function FixedContainer() {
               <Viewtournament />
             </Grid>
 
-            <Grid>
+            <Grid item xs={12} sx={{ mt: 2 }}>
               <Youtubeview />
+            </Grid>
+            <Grid item xs={12} sx={{ mt: 2 }}>
+           < Tournamentviewpage/>
             </Grid>
           </Grid>
         </Box>

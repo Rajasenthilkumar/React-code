@@ -11,6 +11,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import tournamentIcon from './tournamenticon.svg'; // Adjust the path as needed
 import AddIcon from '@mui/icons-material/Add';
+
 const CreateTournament = () => {
     const [showForm, setShowForm] = useState(true);
     const [showLeaderboard, setShowLeaderboard] = useState(false);
