@@ -10,7 +10,7 @@ import Tooltip from '@mui/material/Tooltip';
 import Viewtournament from './Viewtournament';
 import Youtubeview from './Youtubeview';
 import Createnewtournament from './Createnewtournament';
-import Header from './Header'
+import Header from '../Header'
 import Tournamentviewpage from './Tournamentviewpage';
 export default function FixedContainer() {
   const [isButtonClicked, setIsButtonClicked] = useState(false);

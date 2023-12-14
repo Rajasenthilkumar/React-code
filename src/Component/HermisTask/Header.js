@@ -12,7 +12,7 @@
 //                     alt="Funtivity Logo"
 //                     style={{ width: '70px', height: 'auto', marginRight:'20px' }}
 //                 />
-           
+
 //                 <nav>
 //                     <ul style={{ listStyle: 'none', display: 'flex', gap: '20px', margin: 0, padding: 0 }}>
 //                     <li style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -74,12 +74,12 @@
 //                     </ul>
 //                 </nav>
 //             </div>
-            
+
 //             <div className="auth" style={{ display: 'flex', gap: '20px' }}>
 //                 <Button sx={{backgroundColor:'#bd2e12',color:'#f8f8f8 '}}> Sign up</Button>
 //                 <Button sx={{backgroundColor:'#bd2e12',color:'#f8f8f8 '}}>Log in</Button>
 //             </div>
-         
+
 //         </header>
 //         <Divider/>
 //         </div>
@@ -88,6 +88,7 @@
 
 // export default Header;
 
+// Header.js
 // Header.js
 import { Button } from '@mui/material';
 import React from 'react';
@@ -110,18 +111,21 @@ const Header = () => {
 
                     <nav>
                         <ul style={{ listStyle: 'none', display: 'flex', gap: '20px', margin: 0, padding: 0 }}>
-                            <li>
-                                <Link to="/activities">
+                            <li style={{ textAlign: 'center', marginTop: '5px' }}>
+                                <Link to="/Activities" style={{ textDecoration: 'none' }}>
                                     <img
                                         src="https://dzkqr8d3sax4r.cloudfront.net/app_assets/funtivity_portal_icons/icon_funtivityPortal_activities.svg"
                                         alt="Activities Icon"
                                         style={{ width: '18px', height: 'auto' }}
                                     />
-                                    <Typography style={{ marginTop: '5px', fontSize: '12px' }}>Activities</Typography>
+                                    <span style={{ display: 'block', fontSize: '12px' }}>Activities</span>
                                 </Link>
                             </li>
-                            <li>
-                                <Link to="/events">
+
+
+
+                            <li style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                <Link to="/events" style={{ textDecoration: 'none' }}>
                                     <img
                                         src="https://dzkqr8d3sax4r.cloudfront.net/app_assets/funtivity_portal_icons/icon_funtivityPortal_events.svg"
                                         alt="Events Icon"
@@ -130,7 +134,56 @@ const Header = () => {
                                     <Typography style={{ marginTop: '5px', fontSize: '12px' }}>Events</Typography>
                                 </Link>
                             </li>
-                            {/* Add similar Link components for other navigation items */}
+                            <li style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                <Link to="/subscription" style={{ textDecoration: 'none' }}>
+                                    <img
+                                        src="https://dzkqr8d3sax4r.cloudfront.net/app_assets/funtivity_portal_icons/icon_funtivityPortal_upgrade.svg"
+                                        alt="Subscription Icon"
+                                        style={{ width: '18px', height: 'auto' }}
+                                    />
+                                    <Typography style={{ marginTop: '5px', fontSize: '12px' }}>Subscription</Typography>
+                                </Link>
+                            </li>
+                            <li style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                <Link to="/my-content" style={{ textDecoration: 'none' }}>
+                                    <img
+                                        src="https://dzkqr8d3sax4r.cloudfront.net/app_assets/funtivity_portal_icons/icon_funtivityPortal_customThemes.svg"
+                                        alt="My Content Icon"
+                                        style={{ width: '18px', height: 'auto' }}
+                                    />
+                                    <Typography style={{ marginTop: '5px', fontSize: '12px' }}>My Content</Typography>
+                                </Link>
+                            </li>
+                            <li style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                <Link to="/Tournaments" style={{ textDecoration: 'none' }}>
+                                    <img
+                                        src="https://dzkqr8d3sax4r.cloudfront.net/app_assets/funtivity_portal_icons/icon_funtivityPortal_tournaments_active.svg"
+                                        alt="Tournaments Icon"
+                                        style={{ width: '18px', height: 'auto' }}
+                                    />
+                                    <Typography style={{ marginTop: '5px', fontSize: '12px' }}>Tournaments</Typography>
+                                </Link>
+                            </li>
+                            <li style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                <Link to="/profile" style={{ textDecoration: 'none' }}>
+                                    <img
+                                        src="https://dzkqr8d3sax4r.cloudfront.net/app_assets/funtivity_portal_icons/icon_funtivityPortal_profile.svg"
+                                        alt="Profile Icon"
+                                        style={{ width: '18px', height: 'auto' }}
+                                    />
+                                    <Typography style={{ marginTop: '5px', fontSize: '12px' }}>Profile</Typography>
+                                </Link>
+                            </li>
+                            <li style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                <Link to="/refer" style={{ textDecoration: 'none' }}>
+                                    <img
+                                        src="https://dzkqr8d3sax4r.cloudfront.net/app_assets/funtivity_portal_icons/icon_funtivityPortal_profile.svg"
+                                        alt="Profile Icon"
+                                        style={{ width: '18px', height: 'auto' }}
+                                    />
+                                    <Typography style={{ marginTop: '5px', fontSize: '12px' }}>Refer</Typography>
+                                </Link>
+                            </li>
                         </ul>
                     </nav>
                 </div>
