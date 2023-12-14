@@ -40,3 +40,30 @@ function App() {
 export default App;
 
 
+
+// // App.js
+// import React from 'react';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import Header from './Component/HermisTask/Header';
+// import Activities from './Component/HermisTask/Activities'; // Import your Activities component
+// import Events from './Component/HermisTask/Tournamentviewpage'; // Import your Events component
+// // Import other components as needed
+
+// const App = () => {
+//     return (
+//         <Router>
+//             <Switch>
+//                 <Route path="/activities" component={Activities} />
+//                 <Route path="/events" component={Events} />
+//                 {/* Add other routes for your components */}
+//             </Switch>
+//             <Header />
+//             {/* Other components or routes */}
+//         </Router>
+//     );
+// };
+
+// export default App;
+
+
+

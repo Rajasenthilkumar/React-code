@@ -19,14 +19,20 @@ function EventDetailsBox() {
 
     return (
         <div>
-            <div  style={boxStyle}> 
+           
+           
+           
+<Grid container spacing={6}>
+  <Grid item xs={6}>
+  <Grid item xs={12}>
+  <div  style={boxStyle}> 
             <div style={headerStyle}>Details</div>
             <Grid sx={{ p: 1, display: 'flex' }}>
 
-                <Grid item xs={2} className='leftside'>
+                <Grid item xs={4} className='leftside'>
                     Created by:
                 </Grid>
-                <Grid item xs={10} sx={{ marginLeft: '100px' }}>
+                <Grid item xs={8} sx={{ marginLeft: '100px' }}>
                     <Chip
                         label={(
                             <Typography
@@ -45,20 +51,20 @@ function EventDetailsBox() {
                 </Grid>
             </Grid>
             <Grid sx={{ p: 1, display: 'flex' }}>
-                <Grid item xs={2} className='leftside'>
-                    Data
+                <Grid item xs={4} className='leftside'>
+                    Data:
                 </Grid>
-                <Grid item xs={10} sx={{ marginLeft: '100px' }}>
+                <Grid item xs={8} sx={{ marginLeft: '100px' }}>
                     <Typography>
                         3 rd  July 2023
                     </Typography>
                 </Grid>
             </Grid>
             <Grid sx={{ p: 1, display: 'flex' }}>
-                <Grid item xs={2} className='leftside'>
-                    Host
+                <Grid item xs={4} className='leftside'>
+                    Host:
                 </Grid>
-                <Grid item xs={10} sx={{ marginLeft: '100px' }}>
+                <Grid item xs={8} sx={{ marginLeft: '100px' }}>
                     <Chip
                         label={(
                             <Typography
@@ -108,27 +114,37 @@ function EventDetailsBox() {
             </Grid>
             <Grid sx={{ p: 1, display: 'flex' }}>
 
-                <Grid item xs={2} className='leftside'>
+                <Grid item xs={4} className='leftside'>
                     Attendees:
                 </Grid>
-                <Grid item xs={10} sx={{ marginLeft: '100px' }}>
+                <Grid item xs={8} sx={{ marginLeft: '100px' }}>
                     <Typography> 25</Typography>
                 </Grid>
             </Grid>
             <Grid sx={{ p: 1, display: 'flex' }}>
 
-                <Grid item xs={2} className='leftside'>
+                <Grid item xs={4} className='leftside'>
                     Activities Selected:
                 </Grid>
-                <Grid item xs={10} sx={{ marginLeft: '100px' }}>
+                <Grid item xs={8} sx={{ marginLeft: '100px' }}>
                     <Typography>
                         27
                     </Typography>
                 </Grid>
             </Grid>
             </div>
-            <Eventpage/>
-            <Leaderboardpage/>
+  </Grid>
+  <Grid item xs={12}>
+    
+  <Eventpage/>
+  </Grid>
+   
+  </Grid>
+  <Grid item xs={6}>
+  <Leaderboardpage/>
+  </Grid>
+ 
+</Grid>
         </div>
     );
 }

@@ -27,19 +27,12 @@ const EventSummary = ({ events }) => {
     return (
         <div style={boxStyle} sx={{marginBottom :10}}>
             <div style={headerStyle}>Event ({events.length})</div>
-            <div sx={{marginRight:20}}> 
-            <Button variant="outlined"   startIcon={<AddIcon  sx={{ fontWeight: '800', color: '#D6A800' }} />}
-                sx={{
-
-                    borderColor: '#f5ca31',
-                    margin:2,
-                    width: '1100px',
-                }}>
+            <Grid sx={{margin:'10px'}}> 
+            <Button variant="outlined"  fullWidth startIcon={<AddIcon  sx={{ fontWeight: '800', color: '#D6A800' }} />}
+                sx={{  borderColor: '#f5ca31'  }}>
                 ADD EXECUTED EVENT
             </Button>
-
-         
-            </div>
+            </Grid>
             {events.map((event, index) => (
                 <Grid container spacing={2} key={index} sx={{ padding: 2 }}>
                     <Grid item xs={11}>
@@ -49,13 +42,13 @@ const EventSummary = ({ events }) => {
                             </Typography>
 
                         </Grid>
-                        <Grid container spacing={2}>
-                            <Grid item xs={2}>
+                        <Grid container spacing={4}>
+                            <Grid item xs={5}>
                                 <Typography sx={{ display: 'flex', alignItems: 'center' }}>
                                     <PeopleIcon sx={{ marginRight: '4px' }} /> {event.attendees} Attendees
                                 </Typography>
                             </Grid>
-                            <Grid item xs={2}>
+                            <Grid item xs={5}>
                                 <Typography sx={{ display: 'flex', alignItems: 'center' }}>
                                     <DashboardIcon sx={{ marginRight: '4px' }} /> {event.activities} Activities
                                 </Typography>
